@@ -1,0 +1,53 @@
+/*contact section*/
+#contact{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('https://img.freepik.com/premium-photo/healthy-eating-family-people-concept-happy-mother-daughter-having-breakfast-home-kitchen_380164-162917.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1.0;
+    top: 0px;
+    left: 0px;
+    
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px ;
+    padding-top: 20px;
+}
+#contact-box input,
+#contact-box textarea{
+   width: 100%; 
+   padding: .7rem;
+   border-radius: 9px ;
+   font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.h-primary{
+    
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+}
+.center {
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food Plaza log in page</title>
+	<link rel="stylesheet" type="text/css" href="slide navbar style.css">
+<link rel="stylesheet" href="log.css">
+<link rel="stylesheet" href="node.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+	function auth(){
+var email = document.getElementById("email").Value;
+var passaword = document.getElementById("passaword").Value;
+var user = document.getElementById("user-name").Value;
+if(email=="maliksoumyadip2018@gmailcom" && passaword=="12sm" && user=="Soumya"){
+	window.location.assign("https://www.google.com/");
+	alert("log in successfully");
+}
+else{
+	alert("Invalid informatin");
+	return;
+}
+	}
+</script>
+
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true"><i class="fa fa-users" ></i>Sign up</label>
+					<input type="username" name="username" placeholder="username" id="user-name" required="">
+					<input type="email" name="email" placeholder="email" id="email" required="">
+					<input type="passaword" name="passaword" placeholder="passaword" id="passaword" required="">
+					<button onclick="auth()">Sign in</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true"><i class="fa fa-user-circle-o" ></i>Login</label>
+					<input type="Email" name="Email" placeholder="Email" id="Email" required="">
+					<input type="Password" name="Password" placeholder="Password" id="Password" required="">
+					<button onclick="sm()">Login</button>
+				</form>
+			</div>
+	</div>
+	
+
+</body>
+</html>

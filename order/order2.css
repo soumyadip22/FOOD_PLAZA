@@ -1,0 +1,424 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 40px;
+}
+
+/*Home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 88px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   
+}
+#home::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    
+    position: absolute;
+    
+  
+    height: 10%;
+    width: 100%;
+    z-index: -2
+    ;
+    opacity: 0.79;   
+}
+#home h1{
+    color: #ffffff;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#home p{
+    color: hwb(0 0% 100%);
+    text-align: center;
+    font-size: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*service section*/
+#services{
+    margin: 10px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(235, 235, 235);
+    padding: 34px ;
+    margin: 1px 5px;
+    border-radius: 64px;
+    background-color: rgb(243, 216, 226);
+}
+#services .box img{
+   height: 134px;
+   margin: auto;
+   display: block;
+
+  
+}
+
+#services .box p{
+  font-family: Georgia, 'Times New Roman', Times, serif;  
+}
+#services{}
+#services{}
+/*utility classes*/
+
+.h-primary{
+    
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.center{
+    text-align: center;
+}
+
+
+
+.btn-a{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 390px;
+    left: 100px;
+   
+    
+}
+.btn-a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-b{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 390px;
+    left: 370px;
+   
+    
+}
+.btn-b:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-c{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 390px;
+    left: 670px;
+   
+    
+}
+.btn-c:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-d{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 390px;
+    left: 986px;
+   
+    
+}
+.btn-d:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-e{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 390px;
+    left: 1299px;
+   
+    
+}
+.btn-e:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-f{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 750px;
+    left: 109px;
+   
+    
+}
+.btn-f:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-g{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 750px;
+    left: 400px;
+   
+    
+}
+.btn-g:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-h{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 750px;
+    left: 700px;
+   
+    
+}
+.btn-h:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-i{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 750px;
+    left: 1000px;
+   
+    
+}
+.btn-i:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-j{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 750px;
+    left: 1310px;
+   
+    
+}
+.btn-j:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-k{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 1080px;
+    left: 114px;
+   
+    
+}
+.btn-k:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-l{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 1080px;
+    left: 403px;
+   
+    
+}
+.btn-l:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-m{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 1080px;
+    left: 658px;
+   
+    
+}
+.btn-m:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-n{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 1080px;
+    left: 959px;
+   
+    
+}
+.btn-n:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
+.btn-o{
+    padding: 3px 10px;
+    border: 2px solid white;
+    background-color: rgb(208, 26, 26);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 1080px;
+    left: 1305px;
+   
+    
+}
+.btn-o:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+   
+   
+}
