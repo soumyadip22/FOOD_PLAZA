@@ -1,21 +1,36 @@
+const product= [
 
-function sfs(){
-    let div = document.getElementById('search-box').value.toUpperCase() ;
- 
+]
+const categories= [...new set(product.map((item)=> {return item}))]
 
- let nav = document.getElementById('navbar');
- let ul = nav.getElementsByTagName('ul'); 
-let li = nav.getElementsByTagName('li');
-for(var i=0; i< li.length;i++){
-    let a = li[i].getElementsByTagName('a')[0];
-    let textvalue = a.textContent || a.innerHTML;
-    if(textvalue.toUpperCase().indexOf(div) > -1){
-        li[i].style.display = '';
-    }
-    else{
-        li[i].style.display = 'none';
-    }
+document.getElementById('search-box').addEventListener('keyup', (e)=>{
+    const searchtext = e.target.value.toLowerCase();
+    const filterData = categories.filter((item)=>{
+     return(
+        item.title.toLocaleLowerCase().includes(searchtext)
+     )
+    })
+    displayItem(filterData)
+});
+const displayItem = (items)=> {
+    document.getElementById('root').innerHTML=items.map((item)=>{
+        var{image,title,price} = item;
+        return(
+            <div class = 'box'>
+                <div class="img-box">
+                    <img class='images' src='${image}'/>
+                </div>
+                <div class="bottom">
+                    <p>${title}</p>
+                    <h2>$ ${price}.00</h2>
+                    <button>Add To cart</button>
+
+                </div>
+            </div>
+        )
+    }).join('')
 }
- 
+displayItem(categories);
+#root{
+    
 }
-

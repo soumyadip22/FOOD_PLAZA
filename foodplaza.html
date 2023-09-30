@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Plaza services</title>
+    <title>Food Plaza | The delecious food Restaurent</title>  
     <link rel="stylesheet" href="foodplaza.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +14,11 @@
 
 </head>
 <body>
-    <nav id="navbar">
+    <nav id="navbar" class="h_nav" >
         <div id="logo">
             <img src="https://images.squarespace-cdn.com/content/v1/5c76b1ff16b6407adcf96732/01b55513-71ec-4e20-af36-0426388b51b0/Chef+Geoff%27s+%284%29.png" alt="">
         </div>
-        <ul id="myul">
+        <ul class="v_nav" id="myul ">
             <li ><a href="#home"><i class="fa fa-home"></i>HOME</a> </li>
             <li > <a href="#services-container"><i class="fa fa-paper-plane" ></i>SERVICES</a> </li>
             <li > <a href="login/log.html"><i class="fa fa-user"></i>LOG IN </a> </li>
@@ -26,9 +26,16 @@
             <li > <a href="contact/contact.html"><i class="fa fa-comments"></i>CONTACT US</a> </li>
             
         </ul>
-        <div id="search-box">
-            <input type="text" name="Search" id="searchtext" placeholder="search for specific" onkeyup="sfs()">
+        <div id="search-box" class="bg">
+            <input type="text" name="Search" id="searchtext" placeholder="search for specific" onclick="sfs()">
            <a href="#" class="btw"><i class="fa fa-search"></i></a> 
+        </div>
+        <div class="rightnav">
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </div>
     </nav>
     <section id="home">
@@ -120,6 +127,7 @@
             copyright &copy; www.foodplazaService.com   Allright reserved
         </div>
     </footer>
-    <link rel="stylesheet" href="foodplaza.js">
+    <script src="phone.js"></script>
+    <script src="foodplaza.js"></script>
 </body>
 </html>

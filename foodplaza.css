@@ -18,6 +18,7 @@ html{
     position: sticky;
     top: 0px;
     padding-bottom: 10px;
+    
 }
 /*nav bar logo and image */
 #logo{
@@ -368,3 +369,4 @@ footer{
     color: white; 
     padding: 9px 24px;
  }
+
